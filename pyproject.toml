@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "png-im-converter"
+version = "0.1.0"
+description = ""
+authors = ["Ryan Apfel <rasapfel@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pillow = "^10.4.0"
+click = "^8.1.7"
+numpy = "^2.1.0"
+matplotlib = "^3.9.2"
+tqdm = "^4.66.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
