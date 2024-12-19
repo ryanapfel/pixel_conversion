@@ -1,9 +1,10 @@
 [tool.poetry]
-name = "png-im-converter"
+name = "png-im-converter"  # Your package name
 version = "0.1.0"
-description = ""
+description = "A package to create and process colormaps from images."
 authors = ["Ryan Apfel <rasapfel@gmail.com>"]
 readme = "README.md"
+packages = [{ include = "src" }]  # Add this line to include your package
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -12,7 +13,10 @@ click = "^8.1.7"
 numpy = "^2.1.0"
 matplotlib = "^3.9.2"
 tqdm = "^4.66.5"
+pytest = "^8.3.4"
 
+[tool.poetry.scripts]
+png-converter = "src.script:cli"  # Entry point for CLI (if any)
 
 [build-system]
 requires = ["poetry-core"]
